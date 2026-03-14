@@ -1,0 +1,11 @@
+{
+  "title.realtimeclock.config": "Настройка RealTimeClockUz",
+  "category.realtimeclock.general": "Общие настройки",
+  "option.realtimeclock.timezone": "Часовой пояс",
+  "option.realtimeclock.showSeconds": "Показывать секунды",
+  "option.realtimeclock.corner": "Позиция (угол)",
+  "option.realtimeclock.offsetX": "Смещение X",
+  "option.realtimeclock.offsetY": "Смещение Y",
+  "modmenu.summary.realtimeclock": "Отображает реальное системное время в интерфейсе (HUD).",
+  "modmenu.description.realtimeclock": "Простой Fabric мод, который показывает текущее реальное время в настраиваемом месте на экране."
+}

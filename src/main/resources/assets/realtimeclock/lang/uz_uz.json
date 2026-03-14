@@ -1,0 +1,11 @@
+{
+  "title.realtimeclock.config": "RealTimeClockUz Sozlamalari",
+  "category.realtimeclock.general": "Umumiy Sozlamalar",
+  "option.realtimeclock.timezone": "Vaqt Mintaqasi",
+  "option.realtimeclock.showSeconds": "Soniya Ko'rsatish",
+  "option.realtimeclock.corner": "Burchak Holati",
+  "option.realtimeclock.offsetX": "X Ofset",
+  "option.realtimeclock.offsetY": "Y Ofset",
+  "modmenu.summary.realtimeclock": "Haqiqiy tizim vaqtini HUD'da ko'rsatadi.",
+  "modmenu.description.realtimeclock": "Ekrandagi sozlanishi mumkin bo'lgan holatda joriy haqiqiy vaqtni ko'rsatadigan oddiy Fabric mod."
+}

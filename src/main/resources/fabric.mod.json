@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "realtimeclockuz",
+  "version": "${version}",
+  "name": "RealTimeClockUz",
+  "description": "Displays real-world system time on the HUD.",
+  "authors": [
+    "SarvarDev"
+  ],
+  "contact": {
+    "homepage": "https://github.com/SarvarDev/RealTimeClockUz",
+    "sources": "https://github.com/SarvarDev/RealTimeClockUz"
+  },
+  "license": "MIT",
+  "icon": "assets/realtimeclock/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "uz.iskan.realtimeclock.RealTimeClockMod"
+    ],
+    "client": [
+      "uz.iskan.realtimeclock.client.RealTimeClockClient"
+    ],
+    "modmenu": [
+      "uz.iskan.realtimeclock.integration.ModMenuEntry"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21.8",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config2": "*",
+    "modmenu": "*"
+  }
+}

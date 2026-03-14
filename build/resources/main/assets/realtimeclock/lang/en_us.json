@@ -1,0 +1,11 @@
+{
+  "title.realtimeclock.config": "RealTimeClockUz Configuration",
+  "category.realtimeclock.general": "General Settings",
+  "option.realtimeclock.timezone": "Timezone",
+  "option.realtimeclock.showSeconds": "Show Seconds",
+  "option.realtimeclock.corner": "Corner Position",
+  "option.realtimeclock.offsetX": "Offset X",
+  "option.realtimeclock.offsetY": "Offset Y",
+  "modmenu.summary.realtimeclock": "Displays real-world system time on the HUD.",
+  "modmenu.description.realtimeclock": "A simple Fabric mod that shows the current real-world time in a configurable position on your screen."
+}
