@@ -1,0 +1,69 @@
+name: Build va Nashr
+
+on:
+  push:
+    tags:
+      - 'v*'          # faqat v1.0.0, v1.1.0 kabi tag larida ishga tushadi
+  workflow_dispatch:  # qo'lda ham ishga tushirish mumkin
+
+jobs:
+  build-and-publish:
+    name: Build va Modrinth ga Yuklash
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # GitHub Release yaratish uchun
+
+    steps:
+      - name: Kodni yuklab olish
+        uses: actions/checkout@v4
+
+      - name: Java 21 o'rnatish
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Gradle keshni sozlash
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-${{ runner.os }}-
+
+      - name: gradlew ga ruxsat berish
+        run: chmod +x gradlew
+
+      - name: Build qilish
+        run: ./gradlew build --no-daemon
+
+      - name: JAR fayllar nomlarini ko'rish
+        run: ls -la build/libs/
+
+      - name: GitHub Release yaratish
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            build/libs/*.jar
+            !build/libs/*-sources.jar
+          body: |
+            ## RealTimeClockUz ${{ github.ref_name }}
+
+            ### O'rnatish
+            1. `RealTimeClockUz-*.jar` faylini `mods/` papkasiga ko'chiring
+            2. [Fabric API](https://modrinth.com/mod/fabric-api), [ModMenu](https://modrinth.com/mod/modmenu), [Cloth Config](https://modrinth.com/mod/cloth-config) kerak
+
+            ### Qo'llab-quvvatlanadigan versiyalar
+            Minecraft 1.20.6 → 1.21.8
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Modrinth ga yuklash
+        run: ./gradlew modrinth --no-daemon
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          CHANGELOG: |
+            ${{ github.ref_name }} versiyasi.
+            To'liq o'zgarishlar: ${{ github.server_url }}/${{ github.repository }}/releases/tag/${{ github.ref_name }}

@@ -1,0 +1,28 @@
+{
+  "title.realtimeclock.config": "Настройки RealTimeClockUz",
+
+  "category.realtimeclock.general": "Основные",
+  "category.realtimeclock.hud": "Позиция HUD",
+  "category.realtimeclock.zones": "Часовые пояса",
+
+  "option.realtimeclock.enabled": "Включить HUD",
+  "option.realtimeclock.enabled.tooltip": "Показать или скрыть часы на HUD",
+  "option.realtimeclock.showSeconds": "Показывать секунды",
+  "option.realtimeclock.use24h": "24-часовой формат",
+  "option.realtimeclock.blinkColon": "Мигающее двоеточие",
+  "option.realtimeclock.showBackground": "Показывать фон",
+
+  "option.realtimeclock.corner": "Угол",
+  "option.realtimeclock.corner.top_left": "Верхний левый",
+  "option.realtimeclock.corner.top_right": "Верхний правый",
+  "option.realtimeclock.corner.bottom_left": "Нижний левый",
+  "option.realtimeclock.corner.bottom_right": "Нижний правый",
+  "option.realtimeclock.offsetX": "Отступ X",
+  "option.realtimeclock.offsetY": "Отступ Y",
+
+  "option.realtimeclock.clock.label": "Метка часов %s",
+  "option.realtimeclock.clock.zone": "Часовой пояс %s",
+
+  "modmenu.summary.realtimeclock": "Отображает несколько мировых часов в реальном времени на HUD.",
+  "modmenu.description.realtimeclock": "Лёгкий Fabric мод, отображающий несколько настраиваемых мировых часов на экране."
+}

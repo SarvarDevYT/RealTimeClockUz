@@ -1,0 +1,28 @@
+{
+  "title.realtimeclock.config": "RealTimeClockUz Sozlamalari",
+
+  "category.realtimeclock.general": "Umumiy",
+  "category.realtimeclock.hud": "HUD Holati",
+  "category.realtimeclock.zones": "Vaqt Zonalari",
+
+  "option.realtimeclock.enabled": "HUD ni Yoqish",
+  "option.realtimeclock.enabled.tooltip": "Ko'p soat ko'rsatkichini HUD da ko'rsatish yoki yashirish",
+  "option.realtimeclock.showSeconds": "Soniyalarni Ko'rsatish",
+  "option.realtimeclock.use24h": "24 Soatlik Format",
+  "option.realtimeclock.blinkColon": "Miltillovchi Ikki Nuqta",
+  "option.realtimeclock.showBackground": "Fon Ko'rsatish",
+
+  "option.realtimeclock.corner": "Burchak",
+  "option.realtimeclock.corner.top_left": "Yuqori Chap",
+  "option.realtimeclock.corner.top_right": "Yuqori O'ng",
+  "option.realtimeclock.corner.bottom_left": "Pastki Chap",
+  "option.realtimeclock.corner.bottom_right": "Pastki O'ng",
+  "option.realtimeclock.offsetX": "X Oraliq",
+  "option.realtimeclock.offsetY": "Y Oraliq",
+
+  "option.realtimeclock.clock.label": "%s-soat nomi",
+  "option.realtimeclock.clock.zone": "%s-soat vaqt zonasi",
+
+  "modmenu.summary.realtimeclock": "HUD da bir nechta real vaqt soatlarini ko'rsatadi.",
+  "modmenu.description.realtimeclock": "Ekranda bir nechta sozlanishi mumkin bo'lgan real vaqt soatlarini ko'rsatuvchi yengil Fabric mod."
+}

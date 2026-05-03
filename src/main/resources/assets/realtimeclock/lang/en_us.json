@@ -1,0 +1,28 @@
+{
+  "title.realtimeclock.config": "RealTimeClockUz Settings",
+
+  "category.realtimeclock.general": "General",
+  "category.realtimeclock.hud": "HUD Position",
+  "category.realtimeclock.zones": "Timezones",
+
+  "option.realtimeclock.enabled": "Enable HUD",
+  "option.realtimeclock.enabled.tooltip": "Show or hide the clock on the HUD",
+  "option.realtimeclock.showSeconds": "Show Seconds",
+  "option.realtimeclock.use24h": "24-hour Format",
+  "option.realtimeclock.blinkColon": "Blinking Colon",
+  "option.realtimeclock.showBackground": "Show Background",
+
+  "option.realtimeclock.corner": "Corner",
+  "option.realtimeclock.corner.top_left": "Top Left",
+  "option.realtimeclock.corner.top_right": "Top Right",
+  "option.realtimeclock.corner.bottom_left": "Bottom Left",
+  "option.realtimeclock.corner.bottom_right": "Bottom Right",
+  "option.realtimeclock.offsetX": "Offset X",
+  "option.realtimeclock.offsetY": "Offset Y",
+
+  "option.realtimeclock.clock.label": "Clock %s Label",
+  "option.realtimeclock.clock.zone": "Clock %s Timezone",
+
+  "modmenu.summary.realtimeclock": "Shows multiple real-world clocks on the HUD.",
+  "modmenu.description.realtimeclock": "A lightweight Fabric mod that displays multiple configurable real-world clocks on your screen."
+}
