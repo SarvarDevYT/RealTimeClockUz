@@ -83,8 +83,6 @@ Har bir soat uchun:
 
 ---
 
-JAR fayli `build/libs/` papkasida hosil bo'ladi.
-
 ---
 
 ## Litsenziya
