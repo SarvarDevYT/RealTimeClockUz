@@ -83,12 +83,6 @@ Har bir soat uchun:
 
 ---
 
-## Build qilish
-
-```bash
-./gradlew build
-```
-
 JAR fayli `build/libs/` papkasida hosil bo'ladi.
 
 ---
